@@ -1,0 +1,54 @@
+/* .scrollTop {
+    background-color: blue;
+    color: red;
+    width: 50px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0;
+    transition: .2s;
+    visibility: hidden;
+}
+
+.scrollTop:hover {
+    width: 70px;
+    transition: width .3s;
+    opacity: 1;
+}
+
+.second {
+    visibility: visible;
+    transition: .4;
+    opacity: .5;
+} */
+
+.scrollTop {
+    width: 50px;
+    height: 40px;
+    background-color: cornflowerblue;
+    color: red;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transition: all .5s .2s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.scrollTop.visible {
+    visibility: visible;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.scrollTop:hover {
+    opacity: 1;
+    width: 70px;
+}

@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header,
+main,
+footer {
+    width: calc(1024px * 0.8);
+    margin: auto;
+    text-align: center;
+}
+
+header,
+footer {
+    height: 20vh;
+}
+
+main {
+    height: 60vh;
+}
+
+header h1,
+header h1 a,
+header nav,
+header nav li,
+header nav li a,
+#section_article,
+aside {
+    display: inline-block;
+}
+
+/* ================================ */
+
+header h1 a {
+    text-indent: -9999em;
+    width: 150px;
+    height: 150px;
+    background: url(../../image/starbucks.jpg) 0/100% no-repeat;
+}
+
+header nav li a {
+    width: 108px;
+    height: 38px;
+    background: url(../../image/menu.jpg) -3px -3px;
+    text-indent: -9999em;
+}
+
+header ul li:nth-child(2) a {
+    background-position: calc(-3px + -109px) -3px;
+}
+
+header ul li:nth-child(3) a {
+    background-position: calc(-4px + -109px * 2) -3px;
+}
+
+header ul li:nth-child(4) a {
+    background-position: calc(-5px + -109px * 3) -3px;
+}
+
+header nav li a:hover {
+    background: url(../../image/menu.jpg) -3px -42px;
+}
+
+header ul li:nth-child(2) a:hover {
+    background-position: calc(-3px + -109px) -42px;
+}
+
+header ul li:nth-child(3) a:hover {
+    background-position: calc(-4px + -109px * 2) -42px;
+}
+
+header ul li:nth-child(4) a:hover {
+    background-position: calc(-5px + -109px * 3) -42px;
+}
+
+
+
+header h1 {
+    margin: calc((20vh - 150px) / 2) 20px;
+}
+
+header nav {
+    margin: calc((20vh - 38px) / 2) 20px;
+    vertical-align: top;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+/* =================================================== */
+
+#section_article {
+    width: 70%;
+}
+
+#section_article section {
+    line-height: calc(60vh * 0.6);
+    background-color: silver;
+}
+
+#section_article article {
+    line-height: calc(60vh * 0.4);
+    background-color: cadetblue;
+}
+
+div {
+    margin-left: -1px;
+}
+
+main aside {
+    width: 30%;
+    line-height: 60vh;
+    background-color: burlywood;
+    vertical-align: top;
+    margin-left: -6px;
+}
+
+/* ==================================================== */
+
+footer {
+    background-color: antiquewhite;
+    line-height: 20vh;
+}

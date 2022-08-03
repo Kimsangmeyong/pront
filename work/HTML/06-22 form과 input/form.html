@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>필수입력</legend>
+
+            <div>
+                <label>이름
+                    <input type="text" name="userName" required>
+                </label>
+            </div>
+
+            <div>
+                <label>이메일
+                    <input type="email" name="userEmail" required>
+                </label>
+            </div>
+
+            <div>
+                <label>아이디
+                    <input type="text" name="userID" required>
+                </label>
+            </div>
+
+            <div>
+                <label>비밀번호
+                    <input type="password" name="userPSW" required>
+                </label>
+            </div>
+        </fieldset>
+        <hr>
+
+        <fieldset>
+            <legend>선택입력</legend>
+
+            <div>
+                성별 :
+                <label>남
+                    <input type="radio" name="gender" value="man" checked>
+                </label>
+                <label>여
+                    <input type="radio" name="gender" value="woman">
+                </label>
+            </div>
+
+            <div>
+                취미 :
+                <label>독서
+                    <input type="checkbox" name="hobby" value="reading">
+                </label>
+                <label>게임
+                    <input type="checkbox" name="hobby" value="game">
+                </label>
+                <label>운동
+                    <input type="checkbox" name="hobby" value="exercise">
+                </label>
+                <label>등산
+                    <input type="checkbox" name="hobby" value="hiking">
+                </label>
+            </div>
+
+            <div>
+                <label>사진 첨부 :
+                    <input type="file" name="uploadpicture">
+                </label>
+            </div>
+
+            <div>
+                <label>화면 밝기
+                    <input type="range" min="1" max="10" value="5">
+                </label>
+            </div>
+        </fieldset>
+    </form>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>게시판 등록</legend>
+            <div>
+                <textarea name="noticeboard" cols="30" rows="5" placeholder="쓰지마세요"></textarea>
+            </div>
+
+            <button>등록</button>
+        </fieldset>
+    </form>
+    <hr>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>기타 선택정보</legend>
+            <div>
+                <label>이메일
+                    <input type="text" name="email_id">
+                </label>
+
+                <select name="email_domain">
+                    <option value="직접입력">직접입력</option>
+                    <option value="daum.net">daum.net</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="yahoo.com">yahoo.com</option>
+                </select>
+            </div>
+            <hr>
+
+            <h3>선호하는 게임장르</h3>
+            <select name="favorite_game" multiple size="5">
+                <option value="전략시뮬레이션">전략시뮬레이션</option>
+                <option value="RPG">RPG</option>
+                <option value="FPS">FPS</option>
+                <option value="슈팅게임">슈팅게임</option>
+                <option value="RTS">RTS</option>
+            </select>
+            <hr>
+
+            <h3>학습 예정 프로그래밍 언어</h3>
+            <select name="learning_program">
+                <optgroup label="Front-end">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                </optgroup>
+
+                <optgroup label="Back-end">
+                    <option value="ASP">ASP</option>
+                    <option value="JSP">JSP</option>
+                    <option value="PHP">PHP</option>
+                </optgroup>
+            </select>
+            <hr>
+
+            <label>현재 거주지
+                <input list="residenceList" name="currentResidence">
+            </label>
+
+            <datalist id="residenceList">
+                <option value="수원시"></option>
+                <option value="서울시"></option>
+                <option value="안양시"></option>
+                <option value="성남시"></option>
+                <option value="광주시"></option>
+            </datalist>
+        </fieldset>
+    </form>
+</body>
+
+</html>

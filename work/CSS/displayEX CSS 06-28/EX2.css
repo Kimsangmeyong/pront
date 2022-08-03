@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    background-color: dodgerblue;
+    border: 1px solid;
+    width: 80px;
+    line-height: 7vh;
+    text-align: center;
+    color: white;
+    opacity: .3;
+    display: block;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    display: none;
+    margin: 20px;
+    margin-left: 85px;
+}
+
+span:hover+img {
+    display: block;
+
+}
+
+span:hover {
+    background-color: dodgerblue;
+    opacity: 1.0;
+}

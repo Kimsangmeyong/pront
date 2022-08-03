@@ -1,0 +1,20 @@
+body {
+    background-image: url(../../image/starbucks.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+
+body {
+    background-attachment: fixed;
+}
+
+body {
+    /* background-size: 100vw; */
+
+    background-size: cover;
+}
+
+/* body {
+    background: url(../../image/starbucks.jpg) no-repeat bottom right/50vw fixed yellow;
+} */

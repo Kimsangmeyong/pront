@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    text-align: center;
+    width: 500px;
+    margin-left: 30vw;
+    margin-top: 20vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+div li {
+    list-style: none;
+}

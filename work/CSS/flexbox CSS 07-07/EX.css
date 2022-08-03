@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 430px;
+    height: 430px;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: column-reverse;
+}
+
+.container div {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}

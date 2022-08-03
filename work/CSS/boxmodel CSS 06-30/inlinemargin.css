@@ -1,0 +1,22 @@
+div {
+    background: yellowgreen;
+    height: 100px;
+    margin: 20px;
+}
+
+span {
+    background: aquamarine;
+}
+
+.inline {
+    /* margin: 10px; */
+    /* padding: 10px; */
+    border: solid 1px;
+}
+
+.inlineBlock {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    border: solid 1px;
+}

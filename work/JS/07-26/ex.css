@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.slide_list {
+    position: relative;
+    width: 600px;
+    height: 800px;
+    overflow: hidden;
+    border: 1px solid;
+    border-radius: 40px;
+}
+
+.slide_list li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    opacity: 0;
+    transition: all .4s .2s;
+}
+
+.slide_list li:first-child {
+    left: 0%;
+    opacity: 1;
+}

@@ -1,0 +1,174 @@
+* {
+    border: 0;
+    margin: 0;
+}
+
+header,
+main:not(aside),
+footer {
+    width: calc(1024px * 0.8);
+    margin: 0 auto;
+    text-align: center;
+}
+
+header,
+footer {
+    height: 10vh;
+    width: 100%;
+}
+
+header h1,
+.section_article,
+aside,
+section ul,
+footer ul,
+div p,
+.menu {
+    display: inline-block;
+}
+
+body {
+    background: url(../../image/space.jpg) no-repeat center/cover;
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+/* ================================= */
+
+header {
+    background-color: antiquewhite;
+}
+
+header h1 {
+    line-height: 9vh;
+    font-size: 50px;
+    text-align: center;
+}
+
+.sub {
+    float: left;
+    position: absolute;
+    left: 25%;
+    top: 15vh;
+    width: 1000px;
+    background-color: rgba(192, 192, 192, .6);
+    text-align: center;
+}
+
+.manu {
+    width: 100vw;
+}
+
+.main {
+    font-size: 20px;
+}
+
+.sub {
+    display: none;
+}
+
+.main:hover .sub {
+    display: block;
+}
+
+/* =================================== */
+
+.section_article {
+    width: 70%;
+    float: left;
+}
+
+.section_article section {
+    line-height: calc(100vh * 0.05);
+    background-color: silver;
+    width: 1000px;
+}
+
+section li {
+    list-style: none;
+    float: left;
+    font-size: 20px;
+    margin-right: 40px;
+    line-height: 20px;
+    background-color: yellow;
+}
+
+.section_article article {
+    line-height: calc(100vh * 0.9);
+    background-color: cadetblue;
+    width: 1000px;
+}
+
+article h2 {
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+article div p a {
+    line-height: 850px;
+}
+
+article div p {
+    background: url(../../image/seed.jpg) no-repeat center/cover;
+    width: 400px;
+    height: 400px;
+}
+
+article div:nth-of-type(2) p {
+    background: url(../../image/unicorn.jpg);
+    width: 400px;
+    height: 400px;
+}
+
+article div:nth-of-type(3) p {
+    background: url(../../image/OO.jpg);
+    width: 400px;
+    height: 400px;
+}
+
+article div:nth-of-type(4) p {
+    background: url(../../image/balbatos.png) no-repeat center/cover;
+    width: 400px;
+    height: 400px;
+}
+
+article a {
+    font-size: 20px;
+    color: crimson;
+}
+
+section a {
+    color: cadetblue;
+}
+
+main aside {
+    background-color: burlywood;
+    width: 80px;
+    line-height: 8vh;
+    position: fixed;
+    right: 0;
+    top: 0px;
+}
+
+/* ==================================== */
+
+footer {
+    line-height: 5vh;
+    float: right;
+    width: 1200px;
+}
+
+footer li {
+    float: left;
+    list-style: none;
+    font-size: 16px;
+    margin-right: 30px;
+}
+
+footer a {
+    color: white;
+}

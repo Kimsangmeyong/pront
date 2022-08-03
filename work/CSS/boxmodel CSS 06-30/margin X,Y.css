@@ -1,0 +1,32 @@
+.parentBox {
+    background-color: antiquewhite;
+    width: 400px;
+    height: 300px;
+    border: solid 1px;
+}
+
+.childBox {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+.p1box {
+    text-align: center;
+    line-height: 300px;
+}
+
+.p1box div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.p2box:hover div {
+    margin: 0 auto;
+    /* margin: auto; */
+}
+
+.p2box:hover div {
+    margin: 100px auto;
+    /* margin: calc((300px - 100px)/2) auto; */
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1:hover {
+            background-color: aqua;
+        }
+
+        form button:hover {
+            color: red;
+        }
+
+        form:hover label {
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        a:focus,
+        input:focus {
+            outline: none;
+            background-color: darkgray;
+        }
+
+        a:active {
+            background-color: orange;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        input:checked+label {
+            background-color: bisque;
+        }
+
+        #title:target {
+            text-decoration: underline;
+        }
+
+        button:enabled {
+            font-weight: bold;
+        }
+
+        button:disabled {
+            font-size: 10px;
+        }
+
+        form :not(button) {
+            background-color: chartreuse;
+        }
+
+        ol li:not([id="kt"]) {
+            font-weight: bold;
+            font-size: 32px;
+        }
+
+        li:first-child {
+            background-color: antiquewhite;
+        }
+
+        li:last-child {
+            background-color: chocolate;
+        }
+
+        p:first-child {
+            color: red;
+        }
+
+        li:nth-child(3) {
+            font-size: 20px;
+        }
+
+        li:nth-last-child(3) {
+            font-size: 10px;
+        }
+
+        li:not(:last-child) a {
+            color: red;
+        }
+
+        li+li:hover a {
+            color: white;
+        }
+
+        div p:nth-child(2n) {
+            background-color: darkgrey;
+        }
+
+        div p:nth-child(2n+1) {
+            background-color: yellow;
+        }
+
+        li:nth-child(2n-1) a {
+            text-decoration: none;
+        }
+
+        li:nth-child(even) {
+            list-style: square;
+        }
+
+        li:nth-child(odd) {
+            list-style: circle;
+        }
+
+        div p:nth-child(n+4) {
+            text-decoration: line-through;
+        }
+
+        div p:nth-child(-n+3) {
+            font-weight: bold;
+        }
+
+        p:nth-child(n+1):nth-child(-n+10) {
+            color: blue;
+        }
+
+        p:first-of-type {
+            text-decoration: underline;
+        }
+
+        body>p:last-of-type {
+            background-color: green;
+        }
+
+        body>p:nth-of-type(n+2):nth-of-type(-n+5) {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">가상 클래스 선택자</h1>
+    <hr>
+
+    <ul>
+        <li id="naver"><a href="http://www.naver.com">네이버</a></li>
+        <li id="daum"><a href="http://www.daum.net" target="_self">다음</a></li>
+        <li id="google"><a href="http://google.com" target="_blank">구글</a></li>
+        <li id="samsung"><a href="https://www.samsung.com">삼성</a></li>
+        <li id="lg"><a href="https://www.lge.co.kr">LG</a></li>
+        <li id="kt"><a href="https://www.kt.com">KT</a></li>
+        <li><a href="https://www.hyundai.com">현대</a></li>
+        <li><a href="https://www.hanwha.co.kr">한화</a></li>
+    </ul>
+    <hr>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi fuga cum placeat incidunt est debitis voluptatum
+        iste nisi ea provident aut esse dolorem libero, ut error porro dignissimos optio non.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi fuga cum placeat incidunt est debitis voluptatum
+        iste nisi ea provident aut esse dolorem libero, ut error porro dignissimos optio non.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi fuga cum placeat incidunt est debitis voluptatum
+        iste nisi ea provident aut esse dolorem libero, ut error porro dignissimos optio non.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi fuga cum placeat incidunt est debitis voluptatum
+        iste nisi ea provident aut esse dolorem libero, ut error porro dignissimos optio non.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi fuga cum placeat incidunt est debitis voluptatum
+        iste nisi ea provident aut esse dolorem libero, ut error porro dignissimos optio non.</p>
+    <hr>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat est, veniam delectus sequi possimus
+            temporibus cum neque? Nihil ab natus non ex, atque, perferendis libero sequi asperiores repellendus
+            molestias fuga.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat est, veniam delectus sequi possimus
+            temporibus cum neque? Nihil ab natus non ex, atque, perferendis libero sequi asperiores repellendus
+            molestias fuga.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat est, veniam delectus sequi possimus
+            temporibus cum neque? Nihil ab natus non ex, atque, perferendis libero sequi asperiores repellendus
+            molestias fuga.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat est, veniam delectus sequi possimus
+            temporibus cum neque? Nihil ab natus non ex, atque, perferendis libero sequi asperiores repellendus
+            molestias fuga.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat est, veniam delectus sequi possimus
+            temporibus cum neque? Nihil ab natus non ex, atque, perferendis libero sequi asperiores repellendus
+            molestias fuga.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat est, veniam delectus sequi possimus
+            temporibus cum neque? Nihil ab natus non ex, atque, perferendis libero sequi asperiores repellendus
+            molestias fuga.</p>
+    </div>
+
+
+
+
+    <form action="#">
+        <div>
+            <label for="name" class="fontStyle color">이름</label>
+            <input type="text" id="name" placeholder="이름을 입력하세요">
+        </div>
+
+        <div>
+            <label class="color fontSize">주소
+                <input type="text" placeholder="주소를 입력하세요">
+            </label>
+        </div>
+
+        <div>
+            <label for="gender">남</label>
+            <input type="radio" name="gender" id="gender" value="man">
+
+            <label for="gender">여</label>
+            <input type="radio" name="gender" id="gender" value="woman">
+        </div>
+
+        <div>
+            <input type="radio" name="housing-type" id="housing-type" value="homeowner">
+            <label for="housing-type">자가</label>
+
+            <input type="radio" name="housing-type" id="housing-type" value="rental-house">
+            <label for="housing-type">임대</label>
+        </div>
+
+        <button type="reset" disabled>초기화</button>
+        <button>전송</button>
+    </form>
+    <hr>
+
+
+    <!-- <p>
+        Esse aute magna aliquip occaecat. Do ullamco minim consequat duis sit fugiat anim ea. Pariatur fugiat ullamco
+        occaecat qui duis elit incididunt do proident. In sunt non cupidatat reprehenderit enim aute sunt nostrud fugiat
+        do irure elit. Ipsum veniam do excepteur adipisicing labore pariatur. Duis dolor officia ullamco elit fugiat
+        occaecat eiusmod. Quis nisi veniam ipsum ex do labore commodo.
+
+        Cillum amet eiusmod laborum in Lorem pariatur. Occaecat veniam amet enim eiusmod ea mollit laboris culpa quis
+        fugiat sint. Nulla duis elit esse occaecat occaecat.
+
+        Esse eiusmod et non dolore. Duis commodo tempor eiusmod ea sint excepteur velit laboris laborum dolor nisi est.
+        Eiusmod mollit reprehenderit proident amet est deserunt est sunt nisi ut labore. Incididunt labore Lorem cillum
+        reprehenderit fugiat labore est. Aliqua cillum veniam aliqua tempor culpa anim enim consequat laborum sunt id
+        minim aliquip.
+
+        Elit laboris ut laborum proident labore officia reprehenderit deserunt ea enim fugiat deserunt sunt. Adipisicing
+        aute irure ad sit adipisicing consectetur labore laborum esse excepteur minim ullamco. Duis nisi ex consequat
+        minim magna occaecat incididunt deserunt duis sunt.
+
+        Qui culpa deserunt cillum deserunt tempor veniam aliqua in quis ex Lorem mollit sint. Velit ut veniam irure
+        aliqua. Voluptate consequat occaecat labore culpa veniam veniam est occaecat officia ipsum dolor. Est duis amet
+        aliquip occaecat pariatur commodo non fugiat veniam. Ipsum irure anim occaecat tempor mollit aliquip. Veniam
+        exercitation sit ea proident voluptate.
+
+        Est cillum esse ullamco pariatur ut aliquip. Velit laboris anim eiusmod id sunt aute cillum quis irure
+        reprehenderit magna anim ad. Non consequat labore excepteur mollit sint enim nisi amet reprehenderit enim
+        excepteur deserunt esse elit. Laborum officia consequat laboris laboris quis dolore fugiat pariatur ullamco ex
+        fugiat mollit. Ullamco est dolor commodo cupidatat magna nostrud cillum elit reprehenderit eu veniam cupidatat
+        occaecat minim.
+
+        Labore exercitation est ex cillum nulla tempor exercitation cillum adipisicing exercitation. Aute eu qui officia
+        pariatur veniam ea tempor ut. Dolor proident anim est ex cillum voluptate esse in fugiat cillum.
+
+        Sint consectetur mollit duis et nisi ut. Minim in in nulla et est sunt laborum anim. Nulla labore quis non
+        tempor. Dolore ea Lorem dolor et laborum id minim ex et veniam pariatur. Ullamco labore esse reprehenderit eu
+        dolore anim ea. Irure enim veniam qui eiusmod. Labore mollit voluptate ipsum tempor nostrud tempor nulla ea
+        veniam consequat fugiat.
+
+        Dolor quis ut anim laborum veniam sunt sunt aliquip sit sit. Quis reprehenderit exercitation ea duis culpa ut
+        nulla sint tempor qui. Ad nisi officia eu ut. Ea est nisi est consectetur elit minim velit. Irure eiusmod
+        exercitation laborum mollit aliqua. Aliqua veniam veniam voluptate velit. Ea proident duis laborum sunt.
+
+        Duis cupidatat adipisicing officia officia. Esse nostrud culpa ut dolor commodo duis do mollit et eiusmod aute
+        do velit. Mollit exercitation duis pariatur ex pariatur. Aliquip magna sint cupidatat aute laborum aliquip
+        eiusmod sit dolore nostrud magna aliqua ullamco. Labore qui consectetur id id qui nulla est elit ut occaecat
+        excepteur.
+    </p> -->
+
+    <a href="#title">제목으로</a>
+
+</body>
+
+</html>

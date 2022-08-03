@@ -1,0 +1,63 @@
+* {
+    border: 0;
+    margin: 0;
+}
+
+header,
+main,
+footer {
+    width: calc(1024px * 0.8);
+    margin: 0 auto;
+    text-align: center;
+}
+
+header,
+footer {
+    height: 20vh;
+}
+
+header h1,
+#section_article,
+aside {
+    display: inline-block;
+}
+
+/* ================================= */
+
+header {
+    background-color: antiquewhite;
+}
+
+header h1 {
+    line-height: 19vh;
+}
+
+/* =================================== */
+
+#section_article {
+    width: 70%;
+    float: left;
+}
+
+#section_article section {
+    line-height: calc(60vh * 0.6);
+    background-color: silver;
+}
+
+#section_article article {
+    line-height: calc(60vh * 0.4);
+    background-color: cadetblue;
+}
+
+main aside {
+    background-color: burlywood;
+    width: 30%;
+    line-height: 60vh;
+}
+
+/* ==================================== */
+
+footer {
+    background-color: antiquewhite;
+    line-height: 20vh;
+}

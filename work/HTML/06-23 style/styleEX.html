@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 클래스 두 개로 묶는 거 연습 -->
+    <style>
+        h1,
+        h2 {
+            text-align: center;
+            color: darkorange;
+            background-color: gray;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        .A ol>li+li,
+        h2 {
+            font-size: 30px;
+        }
+
+        ul>* {
+            font-size: 20px;
+        }
+
+        .A ol>li+li {
+            text-decoration-line: underline;
+        }
+
+        .A {
+            background-color: beige;
+        }
+
+        .A {
+            color: blue;
+        }
+
+        .A ul {
+            color: pink;
+        }
+
+        .A ol {
+            color: green;
+        }
+
+        .B>li {
+            color: orange;
+        }
+
+        .B {
+            background-color: aquamarine;
+        }
+
+        .B>li~li {
+            color: yellow;
+        }
+
+        .B li>ul {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>중고차</h1>
+    <hr>
+
+    <h2>2021년식</h2>
+
+    <ul class="A">
+        <li>세단
+            <ul>
+                <li>그랜저</li>
+                <li>소나타</li>
+                <li>아반떼</li>
+                <li>K7
+                    <ol>
+                        <li>가솔린</li>
+                        <li>디젤</li>
+                    </ol>
+            </ul>
+        <li>SUV</li>
+        <li>트럭</li>
+        <li>봉고</li>
+    </ul>
+    <hr>
+
+    <h2>2020년식</h2>
+
+
+    <ul class="B">
+        <li>세단</li>
+        <li>SUV
+            <ul>
+                <li>산타페</li>
+                <li>쏘렌토
+                    <ol>
+                        <li>가솔린</li>
+                        <li>디젤</li>
+                    </ol>
+                </li>
+                <li>셀토스</li>
+            </ul>
+        </li>
+        <li>트럭</li>
+        <li>봉고</li>
+    </ul>
+
+</body>
+
+</html>

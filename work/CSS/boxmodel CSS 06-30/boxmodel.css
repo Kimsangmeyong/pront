@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+}
+
+p {
+    word-break: break-all;
+    text-align: justify;
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    background: bisque;
+}
+
+.box1 {
+    padding: 20px;
+    border: 20px solid red;
+    margin: 20px;
+}
+
+.box2 {
+    padding: 20px;
+    border: 20px solid white;
+    margin: 20px;
+}
+
+.box3 {
+    padding: 20px;
+    margin: 20px;
+}
+
+.box4 {
+    margin: 20px;
+}
+
+.box5 {
+    padding: 20px;
+    border: 20px solid red;
+    outline: 10px solid blue;
+    margin: 20px;
+}
+
+.box6 {
+    padding: 20px;
+    border: 20px solid red;
+    outline: 10px solid blue;
+    outline-offset: -10px;
+    margin: 20px;
+}

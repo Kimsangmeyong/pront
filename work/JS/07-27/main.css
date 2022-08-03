@@ -1,0 +1,165 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: antiquewhite;
+    display: flex;
+    margin: 2vh;
+    height: 96vh;
+}
+
+.logo_page img {
+    width: 92%;
+    align-items: center;
+    vertical-align: top;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.logo_page {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    width: 50%;
+    word-break: break-all;
+}
+
+.logo_page p {
+    width: 92%;
+    height: 400px;
+}
+
+.service_container {
+    display: flex;
+    width: 50%;
+    position: relative;
+    flex-direction: column;
+}
+
+.service_container li {
+    margin-bottom: 25px;
+}
+
+.service_container h1 {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.service_header {
+    background-color: darkslategray;
+    line-height: 40px;
+    width: 45vw;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.service_body {
+    width: 45vw;
+    background-color: rgba(173, 179, 173, .5);
+    word-break: break-all;
+
+}
+
+.btn_collapseAll {
+    position: absolute;
+    right: 5vw;
+    top: 6vw;
+    height: 30px;
+    color: mediumblue;
+    width: 120px;
+}
+
+.hidden .service_body {
+    display: none;
+} */
+
+/* =================================================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    margin: 2vh;
+    height: 96vh;
+    background-color: antiquewhite;
+
+    display: flex;
+}
+
+.logo_page,
+.service_container {
+    width: 50%;
+}
+
+.logo_page>*,
+.service_container>* {
+    margin: 4%;
+}
+
+p {
+    text-align: justify;
+    word-break: break-all;
+}
+
+/* ============================================================================ */
+
+.logo_page img {
+    width: 92%;
+}
+
+.logo_page p {
+    font-size: 1.5em;
+}
+
+/* ============================================================================ */
+
+/* 
+    btn_collapseAll 버튼을 service_container 를 기준으로 배치하기 위해
+    service_container 를 relative 로 .btn_collapseAll 을 absolute 로 설정.
+*/
+.service_container {
+    position: relative;
+}
+
+.service_container p {
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.service_list {
+    margin-bottom: 20px;
+}
+
+.service_header {
+    background-color: darkslategray;
+    color: white;
+    cursor: pointer;
+}
+
+.service_body {
+    background-color: #8fbc8f33;
+}
+
+/* ============================================================================ */
+
+.btn_collapseAll {
+    width: 120px;
+    height: 30px;
+    color: blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hidden .service_body {
+    display: none;
+}
